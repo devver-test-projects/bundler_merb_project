@@ -1,7 +1,8 @@
 # Go to http://wiki.merbivore.com/pages/init-rb
  
 require "#{Merb.root}/vendor/gems/environment.rb"
-require 'config/dependencies.rb'
+#require 'config/dependencies.rb'
+Bundler.require_env
  
 use_orm :datamapper
 use_test :rspec
